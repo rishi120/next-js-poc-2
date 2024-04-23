@@ -1,0 +1,17 @@
+.headerStyles {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+}
+
+.headerStyles ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+.headerStyles ul li {
+    padding: 0 10px 0 10px;
+}

@@ -1,4 +1,6 @@
 import './globals.css';
+import ModuleWrapper from '@/src/layout/module-wrapper';
+import NavMenu from '@/src/components/header/nav-menu';
 
 export const metadata = {
   title: 'Next.js Page Routing & Rendering',
@@ -6,9 +8,14 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
- return (
+  return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavMenu />
+        <ModuleWrapper>
+          {children}
+        </ModuleWrapper>
+      </body>
     </html>
   )
 }
