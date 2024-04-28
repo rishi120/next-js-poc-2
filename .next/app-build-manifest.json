@@ -1,27 +1,77 @@
 {
   "pages": {
-    "/layout": [
+    "/(marketing)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/app/(marketing)/page.js"
     ],
-    "/page": [
+    "/(marketing)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/css/app/(marketing)/layout.css",
+      "static/chunks/app/(marketing)/layout.js"
     ],
-    "/news/page": [
+    "/(content)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/news/page.css",
-      "static/chunks/app/news/page.js"
+      "static/css/app/(content)/layout.css",
+      "static/chunks/app/(content)/layout.js"
     ],
-    "/news/[news-id]/page": [
+    "/(content)/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/news/[news-id]/page.css",
-      "static/chunks/app/news/[news-id]/page.js"
+      "static/chunks/app/(content)/not-found.js"
+    ],
+    "/(content)/news/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(content)/news/page.css",
+      "static/chunks/app/(content)/news/page.js"
+    ],
+    "/(content)/news/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(content)/news/layout.js"
+    ],
+    "/(content)/news/not-found": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(content)/news/not-found.js"
+    ],
+    "/(content)/news/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(content)/news/[slug]/page.css",
+      "static/chunks/app/(content)/news/[slug]/page.js"
+    ],
+    "/(content)/news/[slug]/(.)image/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(content)/news/[slug]/(.)image/page.css",
+      "static/chunks/app/(content)/news/[slug]/(.)image/page.js"
+    ],
+    "/(content)/archive/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(content)/archive/layout.js"
+    ],
+    "/(content)/archive/@latest/default": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(content)/archive/@latest/default.css",
+      "static/chunks/app/(content)/archive/@latest/default.js"
+    ],
+    "/(content)/archive/@archive/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(content)/archive/@archive/page.css",
+      "static/chunks/app/(content)/archive/@archive/page.js"
+    ],
+    "/(content)/archive/@archive/[year]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(content)/archive/@archive/[year]/page.css",
+      "static/chunks/app/(content)/archive/@archive/[year]/page.js"
     ]
   }
 }

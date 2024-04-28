@@ -65,7 +65,7 @@ ul {
 }
 
 #home {
-  margin: 3rem auto;
+  margin: 1rem auto;
   max-width: 50rem;
   text-align: center;
 }
@@ -83,7 +83,7 @@ ul {
 
 #home p {
   margin: 2rem 0;
-  color: #bcbcb7;
+  color: #111;
   font-size: 1.1rem;
 }
 

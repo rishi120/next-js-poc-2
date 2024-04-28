@@ -1,8 +1,14 @@
+'use client';
+
 import React from 'react';
 import styles from "./nav-menu.module.css";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function NavMenu() {
+
+    const path = usePathname();
+
     const menuItems = [
         {
             pageName: 'Home',
@@ -14,6 +20,11 @@ export default function NavMenu() {
             pageName: 'News',
             pageId: 2,
             pageLink: '/news'
+        },
+        {
+            pageName: 'Archive',
+            pageId: 3,
+            pageLink: '/archive'
         }
     ]
 
@@ -23,7 +34,7 @@ export default function NavMenu() {
                 {menuItems.map((items) => {
                     return (
                         <li key={items.pageId}>
-                            <Link href={items.pageLink}>{items.pageName}</Link>
+                            <Link href={items.pageLink} className={items.pageLink === path ? styles.activeLink : undefined}>{items.pageName}</Link>
                         </li>
                     )
                 })}

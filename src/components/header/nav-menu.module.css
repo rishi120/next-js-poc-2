@@ -4,14 +4,25 @@
     width: 100%;
     padding: 10px;
     z-index: 10;
+    border-bottom: 1px solid #dedede;
+    background-color: #fff;
 }
 
 .headerStyles ul {
     display: flex;
     justify-content: flex-end;
-    padding-right: 15px;
+    padding: 0 20px 0 20px;
 }
 
 .headerStyles ul li {
     padding: 0 10px 0 10px;
+}
+
+.headerStyles ul li a {
+    text-decoration: none;
+    border-bottom: 1px solid #dedede;
+}
+
+.headerStyles ul li .activeLink {
+    color: blue;
 }

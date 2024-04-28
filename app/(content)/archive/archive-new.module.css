@@ -1,0 +1,56 @@
+.archiveModuleWrapper h1 {
+    font-size: 22px;
+}
+
+
+
+
+.archiveModuleWrapper .ulWrapper {
+    display: flex;
+    padding: 15px;
+
+}
+
+.archiveModuleWrapper .ulWrapper li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 15px;
+    margin: 8px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+.archiveModuleWrapper .ulWrapper li img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.archiveModuleWrapper .ulWrapper li span {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.archiveModuleWrapper .ulWrapper li p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.archiveModuleWrapper .listStyles {
+    display: flex;
+    justify-content: space-between;
+    width: 12%;
+}
+
+.archiveModuleWrapper .listStyles li a {
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 5px;
+    color: #111;
+}
